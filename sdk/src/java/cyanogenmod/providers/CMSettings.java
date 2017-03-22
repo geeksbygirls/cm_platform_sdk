@@ -891,17 +891,21 @@ public final class CMSettings {
         /**
          * Display style of the status bar battery information
          * 0: Display the battery an icon in portrait mode
+         * 1: Display the PA Style Solid Battery
          * 2: Display the battery as a circle
-         * 4: Hide the battery status information
-         * 5: Display the battery an icon in landscape mode
-         * 6: Display the battery as plain text
+         * 3: Display the battery as a big circle
+         * 4: AOSCP battery style
+         * 5: AICP battery style
+         * 6: Hide the battery status information
+         * 7: Display the battery an icon in landscape mode
+         * 8: Display the battery as plain text
          * default: 0
          */
         public static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
 
         /** @hide */
         public static final Validator STATUS_BAR_BATTERY_STYLE_VALIDATOR =
-                new DiscreteValueValidator(new String[] {"0", "1", "2", "3", "4", "5"});
+                new DiscreteValueValidator(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8"});
 
         /**
          * Status bar battery %
@@ -996,14 +1000,12 @@ public final class CMSettings {
          * 7 - Action Sleep
          * 8 - Last app
          * 9 - Toggle split screen
-         * 10 - Single hand (left)
-         * 11 - Single hand (right)
          */
         public static final String KEY_HOME_LONG_PRESS_ACTION = "key_home_long_press_action";
 
         /** @hide */
         public static final Validator KEY_HOME_LONG_PRESS_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 11);
+                new InclusiveIntegerRangeValidator(0, 9);
 
         /**
          * Action to perform when the home key is double-tapped.
@@ -1014,7 +1016,7 @@ public final class CMSettings {
 
         /** @hide */
         public static final Validator KEY_HOME_DOUBLE_TAP_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 11);
+                new InclusiveIntegerRangeValidator(0, 9);
 
         /**
          * Whether to wake the screen with the back key, the value is boolean.
@@ -1063,7 +1065,7 @@ public final class CMSettings {
 
         /** @hide */
         public static final Validator KEY_MENU_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 11);
+                new InclusiveIntegerRangeValidator(0, 9);
 
         /**
          * Action to perform when the menu key is long-pressed.
@@ -1074,7 +1076,7 @@ public final class CMSettings {
 
         /** @hide */
         public static final Validator KEY_MENU_LONG_PRESS_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 11);
+                new InclusiveIntegerRangeValidator(0, 9);
 
         /**
          * Action to perform when the assistant (search) key is pressed. (Default is 3)
@@ -1084,7 +1086,7 @@ public final class CMSettings {
 
         /** @hide */
         public static final Validator KEY_ASSIST_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 11);
+                new InclusiveIntegerRangeValidator(0, 9);
 
         /**
          * Action to perform when the assistant (search) key is long-pressed. (Default is 4)
@@ -1094,7 +1096,7 @@ public final class CMSettings {
 
         /** @hide */
         public static final Validator KEY_ASSIST_LONG_PRESS_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 11);
+                new InclusiveIntegerRangeValidator(0, 9);
 
         /**
          * Action to perform when the app switch key is pressed. (Default is 2)
@@ -1104,7 +1106,7 @@ public final class CMSettings {
 
         /** @hide */
         public static final Validator KEY_APP_SWITCH_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 11);
+                new InclusiveIntegerRangeValidator(0, 9);
 
         /**
          * Action to perform when the app switch key is long-pressed. (Default is 0)
@@ -1114,7 +1116,7 @@ public final class CMSettings {
 
         /** @hide */
         public static final Validator KEY_APP_SWITCH_LONG_PRESS_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 11);
+                new InclusiveIntegerRangeValidator(0, 9);
 
         /**
          * Whether to wake the screen with the home key, the value is boolean.
