@@ -20,7 +20,7 @@
   <!-- Label for the LineageOS system components when they are shown to the user. -->
   <string name="cyanogenmod_system_label">LineageOS-systeem</string>
   <string name="permlab_publishCustomTile">een aangepaste tegel aanmaken in het snelle instellingenpaneel</string>
-  <string name="permdesc_publishCustomTile">Hiermee kan een app een tegel toevoegen aan Snelle instellingen.</string>
+  <string name="permdesc_publishCustomTile">Hiermee kan een app een tegel toevoegen aan snelle instellingen.</string>
   <string name="permlab_modifyNetworkSettings">systeemnetwerkinstellingen wijzigen</string>
   <string name="permdesc_modifyNetworkSettings">Hiermee kan de app wijzigingen aanbrengen in de vliegtuigmodus en de mobiele netwerkinstellingen.</string>
   <string name="permlab_modifySoundSettings">systeemgeluidinstellingen wijzigen</string>
@@ -88,7 +88,7 @@
   <string name="perf_profile_bias_power">Efficiënt</string>
   <string name="perf_profile_bias_perf">Snel</string>
   <!-- Performance profiles -->
-  <string name="perf_profile_pwrsv_summary">Maximale energiebesparing. Vermindert prestaties, achtergrondtaken, gegevensverbinding en animaties worden uitgeschakeld en beeldsnelheid wordt verlaagd</string>
+  <string name="perf_profile_pwrsv_summary">Maximale energiebesparing, vermindert apparaatprestaties</string>
   <string name="perf_profile_bal_summary">Balans tussen optimale prestaties en energieverbruik</string>
   <string name="perf_profile_perf_summary">Hoge prestaties. Te gebruiken in situaties die de hoogste prestaties vereisen en waarbij stroomverbruik niet van belang is</string>
   <string name="perf_profile_bias_power_summary">Geeft de voorkeur aan energiebesparing. Maximaal CPU-vermogen wordt beperkt en geoptimaliseerd voor energiebesparing, ten koste van een mindere prestatie</string>
@@ -185,4 +185,6 @@
   <!-- Privacy Guard -->
   <string name="privacy_guard_manager_title">Privacybescherming</string>
   <!-- Permissions used by remote preferences -->
+  <string name="permlab_manageRemotePrefs">instellingen voor beheer op afstand</string>
+  <string name="permdesc_manageRemotePrefs">Hiermee kan de app instellingen voor beheer op afstand beheren</string>
 </resources>

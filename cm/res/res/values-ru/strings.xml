@@ -88,7 +88,7 @@
   <string name="perf_profile_bias_power">Энергоэффективный</string>
   <string name="perf_profile_bias_perf">Оптимальная производитительность</string>
   <!-- Performance profiles -->
-  <string name="perf_profile_pwrsv_summary">Максимальное энергосбережение. Снижает производительность устройства, запрещает фоновую работу приложений и передачу данных, отключает анимации и уменьшает частоту обновления экрана</string>
+  <string name="perf_profile_pwrsv_summary">Максимальное энергосбережение, снижает производительность устройства</string>
   <string name="perf_profile_bal_summary">Баланс оптимальной производительности и энергопотребления</string>
   <string name="perf_profile_perf_summary">Режим высокой производительности. Полезно при работе с приложениями, требующими минимального времени отклика и высокой скорости обмена данными, и когда энергопотребление устройства неважно</string>
   <string name="perf_profile_bias_power_summary">Стараться экономить энергию. Ограничивается максимальная мощность процессора ценой увеличения времени отклика системы</string>
@@ -104,7 +104,7 @@
   <string name="live_display_night_summary">Только ночные настройки</string>
   <string name="live_display_outdoor">На улице (яркое солнце)</string>
   <string name="live_display_outdoor_summary">Только уличный режим</string>
-  <string name="live_display_hint">LiveDisplay поможет снизить зрительное напряжение и улучшить сон. Нажмите здесь, чтобы попробовать!</string>
+  <string name="live_display_hint">Функция LiveDisplay поможет снизить зрительное напряжение и улучшить сон. Нажмите здесь, чтобы попробовать!</string>
   <string name="accessibility_quick_settings_live_display_off">LiveDisplay выключен.</string>
   <string name="accessibility_quick_settings_live_display_auto">LiveDisplay работает в автоматическом режиме.</string>
   <string name="accessibility_quick_settings_live_display_day">LiveDisplay работает в дневном режиме.</string>

@@ -1595,6 +1595,17 @@ public final class CMSettings {
         public static final Validator STATUS_BAR_BRIGHTNESS_CONTROL_VALIDATOR =
                 sBooleanValidator;
 
+
+        /**
+         * Whether to enable burnin protection
+         0 = 0ff, 1 = on
+         */
+        public static final String SYSTEMUI_BURNIN_PROTECTION = "systemui_burnin_protection";
+
+        /** @hide */
+        public static final Validator SYSTEMUI_BURNIN_PROTECTION_VALIDATOR =
+                sBooleanValidator;
+
         /**
          * Whether or not volume button music controls should be enabled to seek media tracks
          * 0 = 0ff, 1 = on
@@ -2125,6 +2136,7 @@ public final class CMSettings {
             VALIDATORS.put(QS_SHOW_BRIGHTNESS_SLIDER, QS_SHOW_BRIGHTNESS_SLIDER_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_BRIGHTNESS_CONTROL,
                     STATUS_BAR_BRIGHTNESS_CONTROL_VALIDATOR);
+            VALIDATORS.put(SYSTEMUI_BURNIN_PROTECTION, SYSTEMUI_BURNIN_PROTECTION_VALIDATOR);
             VALIDATORS.put(VOLBTN_MUSIC_CONTROLS, VOLBTN_MUSIC_CONTROLS_VALIDATOR);
             VALIDATORS.put(USE_EDGE_SERVICE_FOR_GESTURES,
                     USE_EDGE_SERVICE_FOR_GESTURES_VALIDATOR);
@@ -2632,6 +2644,12 @@ public final class CMSettings {
         public static final String QS_SHOW_BRIGHTNESS_SLIDER = "qs_show_brightness_slider";
 
         /**
+         * Whether to show the auto brightness icon in quick settings panel.
+         * @hide
+         */
+        public static final String QS_SHOW_AUTO_BRIGHTNESS = "qs_show_auto_brightness";
+
+        /**
          * List of QS tile names
          * @hide
          */
@@ -2800,6 +2818,20 @@ public final class CMSettings {
          * @hide
          */
         public static final String LOCKSCREEN_VISUALIZER_ENABLED = "lockscreen_visualizer";
+
+        /**
+         * Whether to show media art on lockscreen
+         * Boolean setting. 0 = off, 1 = on.
+         * @hide
+         */
+        public static final String LOCKSCREEN_MEDIA_METADATA = "lockscreen_media_metadata";
+
+        /**
+         * Whether to activate double tap to sleep on keyguard
+         * Boolean setting. 0 = off, 1 = on.
+         * @hide
+         */
+        public static final String DOUBLE_TAP_SLEEP_ANYWHERE = "double_tap_sleep_anywhere";
 
         /**
          * Whether the lock screen is currently enabled/disabled by SystemUI (the QS tile likely).
